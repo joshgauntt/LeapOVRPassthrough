@@ -1,4 +1,3 @@
-![logo](/other/git_logo.png)
 
 This is a forked and updated working repo from https://github.com/jangxx/LeapOVRPassthrough, this is updated to work on the latest Leap drivers and steamvr and is working with the bigscreen beyond!
 
