@@ -1,0 +1,45 @@
+﻿  GraphicsManager.cpp
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\GraphicsManager.cpp(16,44): warning C4267: 'initializing': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\GraphicsManager.cpp(16,36): warning C4267: 'initializing': conversion from 'size_t' to 'const GLint', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\GraphicsManager.cpp(31,46): warning C4267: 'initializing': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\GraphicsManager.cpp(31,38): warning C4267: 'initializing': conversion from 'size_t' to 'const GLint', possible loss of data
+  LeapHandler.cpp
+  LeapOVRPassthrough.cpp
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\LeapOVRPassthrough.cpp(61,54): warning C4267: 'initializing': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\LeapOVRPassthrough.cpp(61,46): warning C4267: 'initializing': conversion from 'size_t' to 'const GLint', possible loss of data
+  lodepng.cpp
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(711,35): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(729,28): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(730,20): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(753,36): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(770,37): warning C4267: '=': conversion from 'size_t' to 'unsigned short', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(3707,77): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4661,29): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4883,57): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4888,80): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4889,91): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4890,80): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4891,91): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4892,80): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4893,91): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(4894,75): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5078,3): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5102,7): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5136,40): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5153,3): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5175,45): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5206,45): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5319,45): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lodepng.cpp(5397,28): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  OVROverlayController.cpp
+  GraphicsManager.obj : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
+  Generating code
+  Finished generating code
+  LeapOVRPassthrough.vcxproj -> C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\x64\Release\LeapMotionOverlay.exe
+  C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lib\x64\glew32.dll
+  C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lib\x64\glfw3.dll
+  C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lib\x64\LeapC.dll
+  C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\lib\x64\openvr_api.dll
+  4 File(s) copied
+  C:\Users\snapp\Downloads\LeapOVRPassthrough-2.0\LeapOVRPassthrough-1.1.0\LeapOVRPassthrough\assets\manifest.vrmanifest
+  1 File(s) copied
