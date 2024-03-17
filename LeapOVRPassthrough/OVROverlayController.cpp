@@ -28,44 +28,69 @@ OVROverlayController::~OVROverlayController()
 
 bool OVROverlayController::init()
 {
-	bool success = true;
+    bool success = true;
 
-	success = connectToVRRuntime();
+    success = connectToVRRuntime();
 
-	success &= vr::VRCompositor() != NULL;
+    success &= vr::VRCompositor() != NULL;
 
-	if (vr::VROverlay()) {
-		std::string name = "Leap Motion Overlay";
-		std::string key = "de.literalchaos.leap_motion_ovr_overlay";
-		vr::VROverlayError overlayError = vr::VROverlay()->CreateOverlay(key.c_str(), name.c_str(), &m_ulOverlayHandle);
+    if (vr::VROverlay()) {
+        std::string name = "Leap Motion Overlay";
+        std::string key = "de.literalchaos.leap_motion_ovr_overlay";
+        vr::VROverlayError overlayError = vr::VROverlay()->CreateOverlay(key.c_str(), name.c_str(), &m_ulOverlayHandle);
 
-		success &= overlayError == vr::VROverlayError_None;
-	}
+        success &= overlayError == vr::VROverlayError_None;
+    }
 
-	if (success) {
-		vr::VROverlayError err = vr::VROverlay()->SetOverlayWidthInMeters(m_ulOverlayHandle, 0.5f);
-		if (err != vr::VROverlayError_None) {
-			std::cout << "SetOverlayWidthInMeters error: " << err << std::endl;
-		}
+    if (success) {
+        vr::VROverlayError err = vr::VROverlay()->SetOverlayWidthInMeters(m_ulOverlayHandle, 0.5f);
+        if (err != vr::VROverlayError_None) {
+            std::cout << "SetOverlayWidthInMeters error: " << err << std::endl;
+        }
 
-		vr::HmdMatrix34_t position = {
-			1.0f, 0.0f, 0.0f, 0.0f,
-			0.0f, 1.0f, 0.0f, 0.0f,
-			0.0f, 0.0f, 1.0f, -0.3f
-		};
+        vr::HmdMatrix34_t position = {
+            1.0f, 0.0f, 0.0f, 0.0f,
+            0.0f, 1.0f, 0.0f, 0.0f,
+            0.0f, 0.0f, 1.0f, -0.3f
+        };
+        
+        float angleRadians = -90.0f * (3.14159265359f / 180.0f); // Convert degrees to radians (note the negative sign)
+        float cosTheta = cos(angleRadians);
+        float sinTheta = sin(angleRadians);
 
-		err = vr::VROverlay()->SetOverlayTransformTrackedDeviceRelative(m_ulOverlayHandle, 0, &position);
+        vr::HmdMatrix34_t rotationMatrix = {
+            cosTheta, sinTheta, 0.0f, 0.0f,
+            -sinTheta, cosTheta, 0.0f, 0.0f,
+            0.0f, 0.0f, 1.0f, 0.0f
+        };
 
-		if (err != vr::VROverlayError_None) {
-			std::cout << "SetOverlayTransformAbsolute error: " << err << std::endl;
-		}
+        // Combine the rotation matrix with the translation matrix
+        // This can be done by multiplying the matrices
+        // For simplicity, let's assume a function multiplyMatrices exists
+        // You need to implement it according to your matrix library or math utilities
+        vr::HmdMatrix34_t rotatedPosition;
 
-		std::cout << "Successfully created overlay" << std::endl;
-	} else {
-		std::cout << "Error creating overlay" << std::endl;
-	}
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 4; ++j) {
+                rotatedPosition.m[i][j] = 0.0f;
+                for (int k = 0; k < 3; ++k) {
+                    rotatedPosition.m[i][j] += rotationMatrix.m[i][k] * position.m[k][j];
+                }
+            }
+        }
 
-	return true;
+        err = vr::VROverlay()->SetOverlayTransformTrackedDeviceRelative(m_ulOverlayHandle, 0, &rotatedPosition);
+
+        if (err != vr::VROverlayError_None) {
+            std::cout << "SetOverlayTransformAbsolute error: " << err << std::endl;
+        }
+
+        std::cout << "Successfully created overlay" << std::endl;
+    } else {
+        std::cout << "Error creating overlay" << std::endl;
+    }
+
+    return true;
 }
 
 void OVROverlayController::shutdown()
